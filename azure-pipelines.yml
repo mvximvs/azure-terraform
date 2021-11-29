@@ -19,7 +19,7 @@ stages:
     displayName: Build
     pool:
       #vmImage: ubuntu-latest
-      name: 'LAPTOP-6NHK12NF'
+      name: 'local agent'
     steps:
     - task: Docker@2
       inputs:
