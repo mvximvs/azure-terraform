@@ -18,8 +18,8 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      #vmImage: ubuntu-latest
-      name: 'local agent'
+      vmImage: ubuntu-latest
+      #name: 'local agent'
     steps:
     - task: Docker@2
       inputs:
