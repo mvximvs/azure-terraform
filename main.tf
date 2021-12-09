@@ -1,4 +1,13 @@
-﻿terraform{
+﻿# holds our configuration code
+terraform{
+  
+  backend "azurerm" {
+    resource_group_name = "tf_rg_blobstore"
+    storage_account_name = "maxbecerratfstorage"
+    container_name = "tfstate"
+    key = "terraform.tfstate"
+  }
+  
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
